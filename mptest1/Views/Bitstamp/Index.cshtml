@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Bitstamp";
+}
+
+<h2>Bitstamp</h2>
+
+<div>
+    <div id="response">
+
+    </div>
+</div>
+<div>
+<input type="button" value="Getstamp value" onclick="javascript: CallGetStampAPIData();" />
+    </div>
+
+<script type="text/javascript">
+    function CallGetStampAPIData() {
+        var URI = "/api/bitstampapi"
+        $.getJSON(URI, function (data) {
+            var items = [];
+            $.each(data, function (key, val) {
+                items.push('<li id="' + key + '">' + val + '</li>');
+            });
+            $('<ul/>', {
+                'class': 'my-newlist',
+                html: items.join('')
+            }).appendTo('body');
+        });
+
+    }
+
+</script>
+
