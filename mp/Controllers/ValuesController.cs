@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace mptest1.Controllers
+namespace mp.Controllers
 {
     public class ValuesController : ApiController
     {

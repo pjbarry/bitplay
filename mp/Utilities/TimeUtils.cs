@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace mptest1
+namespace mp
 {
     public class TimeUtils
     {

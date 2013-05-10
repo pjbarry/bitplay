@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mptest1", "mptest1\mptest1.csproj", "{10A92FD5-F506-4C8B-BD22-56EED147B0AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mp.Test", "mptests\mp.Test.csproj", "{7D6E874F-D16F-4504-8B94-83BE1E65149C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2072F427-08BC-46A4-96B5-0E713868C938}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -12,6 +8,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2072F4
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mp", "mp\mp.csproj", "{10A92FD5-F506-4C8B-BD22-56EED147B0AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mp.Test", "mp.Test\mp.Test.csproj", "{7D6E874F-D16F-4504-8B94-83BE1E65149C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

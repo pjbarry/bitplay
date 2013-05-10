@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace mptest1
+namespace mp
 {
     public static class WebApiConfig
     {

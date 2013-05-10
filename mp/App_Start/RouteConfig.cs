@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace mptest1
+namespace mp
 {
     public class RouteConfig
     {

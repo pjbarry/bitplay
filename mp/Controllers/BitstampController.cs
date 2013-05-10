@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace mptest1.Controllers
+namespace mp.Controllers
 {
-    public class HomeController : Controller
+    public class BitstampController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /Bitstamp/
 
         public ActionResult Index()
         {
