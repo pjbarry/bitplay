@@ -7,25 +7,34 @@ namespace mp.Models
 {
     public class BitstampCache
     {
-        private Boolean _Connected;
+        private Boolean _connected;
+        private IEnumerable<string> _tickerdata; 
+
+        public BitstampCache()
+        {
+            _connected = true;
+            _tickerdata = new string[] { "value3", "value4" };
+        }
         public IEnumerable<string> TickerData()
         {
-            return new string[] { "value3", "value4" };
+            return _tickerdata;
         }
 
         public void Disconnect()
         {
-            _Connected = false;
+            _connected = false;
         }
 
         public Boolean Connected
         {
-            get { return _Connected; }
+            get { return _connected; }
         }
 
         public void Connect()
         {
-            _Connected = true;
+            _tickerdata = new string[]{ "value1", "value2"};
+            _connected = true;
+
         }
     }
 }

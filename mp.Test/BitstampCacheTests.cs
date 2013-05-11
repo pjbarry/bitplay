@@ -15,7 +15,6 @@ namespace mp.Test
         public void Setup()
         {
             _cache = new BitstampCache();
-            _cache.Connect();
             _ticker = _cache.TickerData();
             _cache.Disconnect();
         }
