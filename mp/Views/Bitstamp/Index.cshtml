@@ -15,7 +15,7 @@
 
 <script type="text/javascript">
     function CallGetStampAPIData() {
-        var URI = "/api/bitstampapi"
+        var URI = "/api/bitstampapi/5";
         $.getJSON(URI, function (data) {
             var items = [];
             $.each(data, function (key, val) {
